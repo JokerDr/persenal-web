@@ -1,0 +1,583 @@
+
+/*nav开始*/
+#nav{
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    top: 0;
+    background: #101618;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+    color: #fff;
+    z-index: 101;
+}
+#nav .content{
+    height: 41px;
+    padding: 12px 13px;
+}
+#nav a{
+    text-align: center;
+    height: 26px;
+    width: 58px;
+    padding: 5px 0;
+    margin: 0 43px;
+    float: left;
+    color: #fff;
+    line-height: 26px;
+}
+#nav .nav-menu{
+    float: right;
+}
+#nav ul{
+    height: 41px;
+}
+#nav .nav-menu li{
+    height: 26px;
+    float: left;
+    padding: 7px;
+    line-height: 26px;
+}
+#nav ul li:hover{
+    color: #ccc;
+}
+#nav ul .selected{
+    color: #03a8f3
+}
+/*nav结束*/
+/*head开始*/
+#head{
+    height: 990px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin-top: 0;
+    background: rgba(0,0,0,0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#99000000,endcolorstr=#99000000);
+}
+#head .bg-mask{
+    background: url('../img/main-bg.png') no-repeat center;
+    background-size: cover;
+    position: fixed;
+    height: 990px;
+    width: 100%;
+    float: left;
+    z-index: -2;
+}
+#head .my-name{
+    position:relative;
+    margin: 0 auto;
+    margin-top: 400px;
+    width: 214px;
+    height: 80px;
+    background: url('../img/my-name.png') no-repeat;
+    z-index: 100;
+}
+#head .my-thoughts{
+    position:relative;
+    z-index: 100;
+    height:28px;
+    margin: 50px auto;
+    color: #e2e2e2
+}
+#head .my-thoughts span{
+    height: 36px;
+    width: 1894px;
+}
+#head .button-scroll{
+    position: absolute;
+    left:50%;
+    bottom: 10%;
+    width:22px;
+    height:46px;
+    border:2px solid #888;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 101;
+}#head .button-scroll:hover{
+    transition: 1.5s;
+    border-color: #fff;
+
+ }
+#head .button-scroll span{
+    height: 10px;
+    width: 2px;
+    position: absolute;
+    left: calc(50% - 1px);
+    -webkit-animation: 1.6s upDown infinite steps(2000);
+    -o-animation: 1.6s upDown infinite steps(2000);
+    animation: 1.6s upDown infinite steps(2000);
+}
+#particles-js{
+    height: 990px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+/*head结束*/
+/*about开始*/
+#about{
+    overflow: hidden;
+    height: 468px;
+}
+#about .between{
+    margin: 0 auto;
+    width: 1140px;
+    height: 468px;
+}
+#about .my-photo{
+    float: left;
+    height: 468px;
+    width: 351px;
+    background: url("../img/myself.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+#about .my-photo:hover{
+    box-shadow: 5px 5px 5px #cccccc;
+}
+#about .my-intro{
+    margin: 30px 0;
+    text-align: left;
+    float: right;
+    height: 355px;
+    width: 665px;
+}
+#about .my-intro h4{
+    font-size: 1.5rem;
+    margin:0 0 20px 0;
+    height: 31px;
+}
+#about .my-intro h5{
+    font-size: 1rem;
+    margin:0 0 20px 0;
+    height: 19px;
+}
+#about .my-intro p{
+    font-size: 1rem;
+    font-weight: 200;
+    word-break: keep-all;
+    height: 78px;
+    line-height: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+#about .content div{
+    padding: 0 15px;
+    width: 280px;
+    height:35px;
+    display: inline-block;
+
+}
+#about .my-intro h6{
+    height:15px;
+    margin:0;
+    line-height: 15px;
+    font-weight: 700;
+    font-size:14px;
+}
+#about  .my-intro span{
+    font-weight: 300;
+    padding-left:10px;
+}
+#about .between .my-intro .content .btn-arr{
+    width:665px;
+    height:66px;
+}
+#about .btn-arr button{
+    border: 0;
+    display: inline-block;
+    font-size:12px;
+    width:170px;
+    height:40px;
+    margin: 20px 6px 6px 0;
+    padding:12px 30px;
+    cursor: pointer;
+    color: #fff;
+}
+#about .btn-arr button:hover{
+    box-shadow: 0 2px 2px 1px #cccccc;
+}
+#about .btn-arr-1{
+    background: #03a9f4;
+    margin-right:80px;
+}
+#about .d-icon{
+    font-size: 1rem;
+    margin-right: 4px;
+}
+#about .h-icon{
+    font-size: 1rem;
+    margin-right: 4px;
+}
+#about .btn-arr-2{
+    background: #9e9e9e;
+}
+/*about结束*/
+/*skils开始*/
+
+#skills{
+    height: 463px;
+    background: #f7f7f7;
+}
+#skills .container{
+    height:463px;
+}
+#skills .row{
+    height:463px;
+}
+#skills .skills-prog{
+    height:383px;
+    width:1140px;
+    text-align: left;
+}
+#skills .skills-prog h6{
+    font-weight: 700;
+    margin: 15px 0;
+}
+#skills .barfiller{
+    width: 100%;
+    height: 22px;
+    border-radius: 55px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+#skills .tip{
+    background: #fff;
+    border-radius: 50%;
+    margin-top: -4px;
+    padding: 2px 4px;
+    font-size: 12px;
+    font-weight: 700;
+    left: 5px;
+    height:30px;
+    line-height: 30px;
+    position: absolute;
+    z-index: 2;
+}
+#skills .fill{
+    display: block;
+    position: relative;
+    height: 100%;
+    border-radius: 55px;
+}
+
+#services{
+    color: #fff;
+    height:332px;
+    background: rgba(0,0,0,0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#99000000,endcolorstr=#99000000);
+}
+#services .container{
+    height:332px;
+}
+#services .container .row{
+    height:332px;
+}
+#services .servies-item{
+    height:222px;
+    width:320px;
+    padding:15px;
+    float: left;
+    position: relative;
+    margin: 0 15px;
+}
+#services .servies-item:before{
+    content: '';
+    border: 1px solid #03a9f4;
+    position: absolute;
+    left:0;
+    top:0;
+    height: 20px;
+    width: 20px;
+    border-bottom:none;
+    border-right: none;
+
+}
+#services .servies-item:after{
+    content: '';
+    border: 1px solid #03a9f4;
+    position: absolute;
+    right:0;
+    top:0;
+    height: 20px;
+    width: 20px;
+    border-bottom:none;
+    border-left: none;
+
+}
+#services .servies-item i{
+    height: 43px;
+    margin-top:30px;
+    color: #03a9f4;
+}
+#services .servies-item i:hover{
+    opacity: 0;
+    filter: alpha(opacity:0);
+    transition: 2s;
+}
+#services .servies-item h4{
+    height:23px;
+    width:320px;
+    margin:20px 0;
+    font-size: 22px;
+    font-weight: 100;
+}
+#services .servies-item p{
+    height:52px;
+    margin-bottom: 30px;
+    width:320px;
+    color: #bfbfbf;
+    font-size: 14px;
+}
+#services .servies-item span{
+    display: block;
+    position: relative;
+}
+#services .servies-item span:before{
+    content: '';
+    border: 1px solid #03a9f4;
+    position: absolute;
+    left:-15px;
+    top:-4px;
+    height: 20px;
+    width: 20px;
+    border-top:none;
+    border-right: none;
+
+}
+#services .servies-item span:after{
+    content: '';
+    border: 1px solid #03a9f4;
+    position: absolute;
+    right:-15px;
+    top:-4px;
+    height: 20px;
+    width: 20px;
+    border-top:none;
+    border-left: none;
+}
+/*service结束*/
+/*portfolio开始*/
+#portfolio{
+    height:918px;
+}
+/*portfolio结束*/
+/*client结束*/
+#client{
+    color: #fff;
+    height:284px;
+    background: rgba(0,0,0,0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#99000000,endcolorstr=#99000000);
+}
+#client .fa-quote-left{
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    color: #03a9f4;
+}
+/*cilient结束*/
+/*#blog{*/
+    /*height:546px;*/
+/*}*/
+#contact{
+    background:#f7f7f7;;
+    height:628px;
+}
+#contact .form-wrap{
+    margin: 0 auto;
+    height:400px;
+    width:984px;
+    margin-top: 50px;
+}
+#contact .content{
+    width:984px;
+    height:400px;
+}
+#contact .row{
+    height:628px;
+}
+#contact .way{
+    display:inline-block;
+    width:255px;
+    height:100px;
+    padding:0 15px;
+}
+#contact .contact{
+    width:210px;
+    height:40px;
+    margin: 30px 0;
+    padding-left: 45px;
+}
+#contact .c-icon{
+    float: left;
+    margin-left: -40px;
+    height: 30px;
+    width:30px;
+    background: #03a9f4;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#contact .c-text{
+    text-align: left;
+}
+#contact .c-text h5{
+    color: #777;
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+#contact .c-text h6{
+    color: #252525;
+    font-weight: 500;
+}
+#contact .c-icon i{
+    color: #fff;
+    line-height: 30px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#contact .con-item{
+    color: #757575;
+    font-size:15px;
+    float: left;
+    height:72px;
+    width:462px;
+    padding:0 15px;
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+}
+#contact .con-item input,textarea{
+    background: #f7f7f7;
+    border: none;
+    border-bottom:1px solid #ccc;
+}
+#contact .con-item input{
+    width:462px;
+    height:30px;
+    padding:7px 0;
+}
+#contact .con-item label{
+    height:26px;
+    padding:8px 0;
+    position: absolute;
+    left: 15px;
+    top: 0;
+}
+#contact .item-sub{
+    width:954px;
+}
+#contact .item-sub input{
+    width:100%;
+    height:46px;
+}
+#contact .item-message{
+    width:954px;
+    height:176px;
+}
+#contact .item-message textarea{
+    width:100%;
+    height:100px;
+    padding:23px 0;
+}
+#contact .item-send{
+    width:954px;
+    height:51px;
+}
+#contact .item-send button{
+    width:50%;
+    height:40px;
+    padding:12px 30px;
+    margin:6px;
+    font-weight: 400;
+    font-size: 12px;
+    background: #03a9f4;
+    color: #fff;
+}
+/*contact结束*/
+/*footer开始*/
+#page-footer{
+    height:148px;
+    width: 100%;
+    padding:20px 0 50px 0;
+    background: #1c2331;
+    text-align: center;
+}
+#page-footer .cop{
+
+}
+#page-footer .container{
+    width:1110px;
+}
+#page-footer h2{
+    color: #797979;
+    padding: 10px 0;
+    font-weight: 400;
+    width:1110px;
+    margin: 0 auto;
+}
+#page-footer .icon{
+    color: #fff;
+    display: inline-block;
+    height:30px;
+    width:30px;
+    margin: 20px 10px;
+}
+#page-footer .c-icon{
+    height:30px;
+    width:30px;
+    background: #000;
+    line-height: 30px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#page-footer .c-icon i{
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#page-footer span{
+    display: block;
+    color: #d2d2d2;
+    font-size:14px;
+}
+
+
+#page-footer
+
+
+
+@media (max-width: 1200px) {
+    #about{
+        height:414px;
+    }
+    #about .between{
+        width:960px;
+        height: 414px;
+    }
+    #about .between .my-photo{
+        height:414px;
+        width:290px;
+    }
+    #about .between .my-intro{
+        width:530px;
+    }
+    #about .between .my-intro .content div{
+        width:232px;
+    }
+}
