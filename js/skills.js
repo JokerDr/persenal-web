@@ -20,41 +20,22 @@ define(["jquery"],function($){
                 content:""
             };
             $.extend(defaultSettings,settings);//合并参数
+            var
 
 
 
-                var $ofills[] = ducoment.getElementsByClassName("fill");
-                var $scrollTop = 0;
-
-
-
-
-
-               //  function getScrollTop(){
-               //   if(document.documentElement&&document.documentElement.scrollTop){
-               //       scrollTop=document.documentElement.scrollTop;
-               //   }else if(document.body){
-               //       scrollTop=document.body.scrollTop;
-               //   }
-               //   return scrollTop;
-               // }
-
-
-
-
-
-
-
-                // function getScrollTop(){
-                //     var scrollTop=0;
-                //     if(document.documentElement&&document.documentElement.scrollTop){
-                //         scrollTop=document.documentElement.scrollTop;
-                //     }else if(document.body){
-                //         scrollTop=document.body.scrollTop;
-                //     }
-                //     return scrollTop;
-                // }
             }
 
     };
 });
+
+
+// function getScrollTop(){
+//     var scrollTop=0;
+//     if(document.documentElement&&document.documentElement.scrollTop){
+//         scrollTop=document.documentElement.scrollTop;
+//     }else if(document.body){
+//         scrollTop=document.body.scrollTop;
+//     }
+//     return scrollTop;
+// }

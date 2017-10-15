@@ -1,12 +1,22 @@
-/**
- * Created by Administrator on 2017/10/4.
- */
-// requirejs.config({
-//     paths: {
-//         jquery:'jquery-1.11.2'
-//     }
-// });
-// //
+
+ requirejs.config({
+     paths: {
+         jquery:'jquery-1.11.2'
+     }
+ });
+
+ require(["jquery", "carousel"], function($, Carousel){
+     var settings1 = {
+         selector : ".my-photo",
+         imgArr : ["img/main-bg2.jpg", "img/main-bg.png"],
+         speed : 500,
+         btnStyle : "circle",
+         arrowPos : "center"
+     };
+     var carousel1 = new Carousel(settings1);
+     carousel1.init();
+ });
+
 // require(["jquery","particleJs-config"],function($,ParticleJs){
 //     var settings1 = {
 //         pJsFilePosition:"json/particles.json",

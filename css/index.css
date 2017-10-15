@@ -44,6 +44,15 @@
     color: #03a8f3
 }
 /*nav结束*/
+#bg-fix{
+    background: url('../img/main-bg2.jpg') no-repeat center;
+    background-size: cover;
+    position: fixed;
+    height: 990px;
+    width: 100%;
+    z-index: -2;
+    float: left;
+}
 /*head开始*/
 #head{
     height: 990px;
@@ -52,17 +61,15 @@
     text-align: center;
     position: relative;
     margin-top: 0;
-    background: rgba(0,0,0,0.6);
-    filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#99000000,endcolorstr=#99000000);
-}
-#head .bg-mask{
     background: url('../img/main-bg.png') no-repeat center;
     background-size: cover;
-    position: fixed;
+}
+#head .bg-mask{
+    background: rgba(0,0,0,0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#99000000,endcolorstr=#99000000);
     height: 990px;
     width: 100%;
     float: left;
-    z-index: -2;
 }
 #head .my-name{
     position:relative;
@@ -74,11 +81,14 @@
     z-index: 100;
 }
 #head .my-thoughts{
-    position:relative;
+    position: absolute;
+    left:50%;
+    width:100%;
+    margin-left: -50%;
+    margin-top: 10px;
     z-index: 100;
     height:28px;
-    margin: 50px auto;
-    color: #e2e2e2
+    color: #e2e2e2;
 }
 #head .my-thoughts span{
     height: 36px;
@@ -130,9 +140,77 @@
     float: left;
     height: 468px;
     width: 351px;
-    background: url("../img/myself.jpg") no-repeat center;
-    -webkit-background-size: cover;
-    background-size: cover;
+    /*background: url("../img/myself.jpg") no-repeat center;*/
+    /*-webkit-background-size: cover;*/
+    /*background-size: cover;*/
+}
+#about .Carousel-container{
+
+    height: 468px;
+    width: 351px;
+}
+#about .Carousel-imgs img{
+    height: 468px;
+    width: 351px;
+}
+#about .carousel-tabs{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+#about .carousel-tabs li{
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+}
+#about .carousel-tabs .selected{
+    background: orange;
+    color: #ffffff;
+}
+#about .carousel-imgs img{
+    display: none;
+}
+#about .carousel-imgs .selected{
+    display: block;
+}
+/*.carousel-arrows{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}*/
+#about .carousel-arrows .carousel-prev, .carousel-arrows .carousel-next{
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+#about .carousel-arrows .carousel-prev.bottom{
+    left: 10px;
+    bottom: 10px;
+}
+#about .carousel-arrows .carousel-next.bottom {
+    left: 35px;
+    bottom: 10px;
+}
+
+#about .carousel-arrows .carousel-prev.center{
+    top: 50%;
+    margin-top: -10px;
+    left: 0;
+}
+#about .carousel-arrows .carousel-next.center{
+    top: 50%;
+    margin-top: -10px;
+    right: 0;
 }
 #about .my-photo:hover{
     box-shadow: 5px 5px 5px #cccccc;
@@ -374,6 +452,10 @@
     filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#99000000,endcolorstr=#99000000);
 }
 #client .fa-quote-left{
+    margin: 0 auto ;
+    width:36px;
+    border: 2px solid #03a9f4;
+    border-radius: 50%;
     display: block;
     height: 36px;
     line-height: 36px;
@@ -551,14 +633,12 @@
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-#page-footer span{
+#page-footer span a{
     display: block;
     color: #d2d2d2;
     font-size:14px;
 }
 
-
-#page-footer
 
 
 
