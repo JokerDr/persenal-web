@@ -9,7 +9,7 @@
      var settings1 = {
          selector : ".my-photo",
          imgArr : ["img/main-bg2.jpg", "img/main-bg.png"],
-         speed : 500,
+         speed : 2000,
          btnStyle : "circle",
          arrowPos : "center"
      };
@@ -17,14 +17,14 @@
      carousel1.init();
  });
 
-// require(["jquery","particleJs-config"],function($,ParticleJs){
-//     var settings1 = {
-//         pJsFilePosition:"json/particles.json",
-//         pJsFileName:"particles-js"
-//     };
-//     var particleJsConfig = new ParticleJs(settings1);
-//     particleJsConfig.init();
-// });
+require(["jquery","particleJs-config"],function($,ParticleJs){
+    var settings1 = {
+        pJsFilePosition:"json/particles.json",
+        pJsFileName:"particles-js"
+    };
+    var particleJsConfig = new ParticleJs(settings1);
+    particleJsConfig.init();
+});
 //
 // require(["jquery","skills"],function($,Skills){
 //         var settings2 = {

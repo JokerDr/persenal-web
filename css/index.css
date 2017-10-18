@@ -145,7 +145,7 @@
     /*background-size: cover;*/
 }
 #about .Carousel-container{
-
+    position: relative;
     height: 468px;
     width: 351px;
 }
@@ -153,65 +153,57 @@
     height: 468px;
     width: 351px;
 }
-#about .carousel-tabs{
+#about .Carousel-tabs{
     position: absolute;
-    right: 10px;
+    right: 150px;
     bottom: 10px;
+
 }
-#about .carousel-tabs li{
-    width: 20px;
-    height: 20px;
-    background: #000000;
-    color: #fff;
+#about .Carousel-tabs li{
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    color: #000;
     text-align: center;
     float: left;
     margin-right: 5px;
     cursor: pointer;
 }
-#about .carousel-tabs .selected{
-    background: orange;
-    color: #ffffff;
+#about .Carousel-tabs .selected{
+    background: #03a9f4;
 }
-#about .carousel-imgs img{
+#about .Carousel-imgs img{
     display: none;
 }
-#about .carousel-imgs .selected{
+#about .Carousel-imgs .selected{
     display: block;
 }
-/*.carousel-arrows{
+.carousel-arrows{
     position: absolute;
     left: 10px;
     bottom: 10px;
-}*/
-#about .carousel-arrows .carousel-prev, .carousel-arrows .carousel-next{
-    width: 20px;
-    height: 20px;
-    background: #000000;
+}
+#about .Carousel-arrows .Carousel-prev, .Carousel-arrows .Carousel-next{
+    font-size: 20px;
+    padding: 50px 0;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    background: rgba(0,0,0,0.5);
     color: #ffffff;
     text-align: center;
     line-height: 20px;
     cursor: pointer;
-    position: absolute;
-}
-#about .carousel-arrows .carousel-prev.bottom{
-    left: 10px;
-    bottom: 10px;
-}
-#about .carousel-arrows .carousel-next.bottom {
-    left: 35px;
-    bottom: 10px;
-}
 
-#about .carousel-arrows .carousel-prev.center{
-    top: 50%;
-    margin-top: -10px;
+}
+#about .Carousel-prev{
     left: 0;
 }
-#about .carousel-arrows .carousel-next.center{
-    top: 50%;
-    margin-top: -10px;
+#about .Carousel-next{
     right: 0;
 }
+
 #about .my-photo:hover{
     box-shadow: 5px 5px 5px #cccccc;
 }
