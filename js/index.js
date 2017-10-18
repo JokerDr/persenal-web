@@ -17,14 +17,11 @@
      carousel1.init();
  });
 
-require(["jquery","particleJs-config"],function($,ParticleJs){
-    var settings1 = {
-        pJsFilePosition:"json/particles.json",
-        pJsFileName:"particles-js"
-    };
-    var particleJsConfig = new ParticleJs(settings1);
-    particleJsConfig.init();
+require(["particles"],function(){
+    particlesJS.load("particles-js", " json/particles.json ", function () {
+    })
 });
+
 //
 // require(["jquery","skills"],function($,Skills){
 //         var settings2 = {
