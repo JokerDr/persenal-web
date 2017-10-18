@@ -21,14 +21,3 @@ require(["particles"],function(){
     particlesJS.load("particles-js", " json/particles.json ", function () {
     })
 });
-
-//
-// require(["jquery","skills"],function($,Skills){
-//         var settings2 = {
-//             left:1100,
-//             color:"#03a9f4",
-//             animateDuring:1000,
-//             animateEasing:"linear",
-//             content:""
-//         }
-// });
