@@ -9,25 +9,34 @@ requirejs.config({
 
 
 define(["jquery"],function($){
-    return {
-        skills:
-            function Skills(settings){
-            var defaultSettings = {
+        function Skills(settings){
+            this.defaultSettings = {
+                skillPercent:[],
                 left:1100,
-                color:"#03a9f4",
-                animateDuring:1000,
-                animateEasing:"linear",
-                content:""
+                color:"#03a9f4"
+                // transitionDuring:1000,
+                // content:""
             };
-            $.extend(defaultSettings,settings);//合并参数
-            var
+            $.extend(this.defaultSettings,settings);//合并参数
 
+          }
+           Skills.prototype.init = function(){
+                // animated(function () {
 
+                // },1000,function () {
+                    
+                // });
+               for(var  i in this.defaultSettings.skillPercent){
+                   var num = Number(i)+1;
 
-            }
-
-    };
-});
+                   $('.' + 'fill'+num).css('width',this.defaultSettings.skillPercent[i]);
+                   $('.' + 'tip'+num).css('left',this.defaultSettings.skillPercent[i]);
+                   $('.' + 'tip'+num).css('margin-left',-34+'px');
+               }
+               $('.fill').css('background',this.defaultSettings.color);
+          }
+          return Skills;
+})
 
 
 // function getScrollTop(){
