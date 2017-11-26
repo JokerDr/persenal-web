@@ -3,12 +3,17 @@
  */
 requirejs.config({
     path:{
-            jquery:'jquery-1.11.2',
+            jquery:'jquery.min',
             carousel:'carousel'
         }
 });
 
 define(["jquery"],function($){
-
+    function Cilent(){
+        this.defaultings = {
+            speed:1000,
+            
+        }
+    }
 
 })

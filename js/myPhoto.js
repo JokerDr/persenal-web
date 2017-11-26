@@ -3,7 +3,7 @@
  */
 requirejs.config({
     path:{
-        jquery:'jquery-1.11.2'
+        jquery:'jquery.min',
         carousel:'carousel'
     }
 });
