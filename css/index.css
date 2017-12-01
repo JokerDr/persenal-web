@@ -437,6 +437,32 @@
 #portfolio{
     height:918px;
 }
+#portfolio .filtering{
+    margin-bottom: 50px;
+}
+#portfolio .filtering span{
+    margin: 0 10px;
+    padding:10px 3px;
+    font-size: 16px;
+    color: #777;
+    cursor: pointer;
+    overflow: hidden;
+}
+#portfolio .gallery{
+    height:760px;
+    width:1140px;
+}
+#portfolio .itemImg{
+    position: relative;
+
+}
+#portfolio .itemImg img{
+    float: left;
+    height:380px;
+    width:380px;
+}
+
+
 /*portfolio结束*/
 /*client结束*/
 #client{
@@ -636,22 +662,3 @@
 
 
 
-@media (max-width: 1200px) {
-    #about{
-        height:414px;
-    }
-    #about .between{
-        width:960px;
-        height: 414px;
-    }
-    #about .between .my-photo{
-        height:414px;
-        width:290px;
-    }
-    #about .between .my-intro{
-        width:530px;
-    }
-    #about .between .my-intro .content div{
-        width:232px;
-    }
-}
