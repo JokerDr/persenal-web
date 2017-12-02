@@ -1,6 +1,8 @@
 *{
+
     margin:0;
     padding:0;
+    user-select: none;
 }
 a{
     text-decoration: none;
@@ -15,24 +17,6 @@ input,button,textarea{
 textarea{
     resize:none;
 }
-/*.clear-fix {*/
-    /**overflow: hidden;*/
-    /**zoom: 1;*/
-/*}*/
-/*.clear-fix:after {*/
-    /*display: table;*/
-    /*content: "";*/
-    /*width: 0;*/
-    /*clear: both;*/
-/*}*/
-
-/*@font-face{*/
-    /*font-family: ;*/
-    /*src:;*/
-    /*font-weight:normal;*/
-    /*font-style: normal;*/
-    /*unicode-range:U+0-10FFFF;*/
-/*}*/
 
 .div-padding{
     text-align: center;
@@ -78,25 +62,56 @@ h3:after{
     content:"——";
     color: #03a9f4;
 }
+/*小鼠标动画*/
 @keyframes upDown {
     from {
         background: #888;
     }
-    25%{
-        top:0;
+    25% {
+        top: 0;
         background: #cccccc;
     }
-    50%{
-        top:10px;
+    50% {
+        top: 10px;
         background: #9e9e9e;
     }
-    75%{
-        top:15px;
+    75% {
+        top: 15px;
         background: #888;
     }
     to {
         transition-delay: 1.5s;
-        top:18px;
+        top: 18px;
         display: none;
     }
 }
+/*照片墙动画*/
+@keyframes animations  {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+@-webkit-keyframes animations {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+@-moz-keyframes animations {
+    0% {
+        top: -100%;
+    }
+
+
+    100% {
+        top: 0;
+    }
+}
+
