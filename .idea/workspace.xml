@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b2f38e73-fef9-4dd2-a2aa-ec5c8eed9010" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
-      <change beforePath="$PROJECT_DIR$/js/showWork.js" afterPath="$PROJECT_DIR$/js/showWork.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +19,8 @@
       <file leaf-file-name="showWork.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/showWork.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="595">
+              <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="46" selection-end-column="63" />
               <folding>
                 <element signature="e#1646#1723#0" expanded="false" />
                 <element signature="e#1996#2466#0" expanded="false" />
@@ -243,7 +238,7 @@
       <workItem from="1512111982277" duration="5954000" />
       <workItem from="1512135900467" duration="11179000" />
       <workItem from="1512179473335" duration="25036000" />
-      <workItem from="1512215624775" duration="10933000" />
+      <workItem from="1512215624775" duration="10978000" />
     </task>
     <task id="LOCAL-00001" summary="完成技能条部分（动态监听）">
       <created>1511708290118</created>
@@ -259,11 +254,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512139455308</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成90%照片墙功能">
+      <created>1512227650041</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512227650042</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90947000" />
+    <option name="totallyTimeSpent" value="90992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -290,7 +292,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成技能条部分（动态监听）" />
     <MESSAGE value="完成技能条（动态监听）,以及部分照片墙功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成技能条（动态监听）,以及部分照片墙功能" />
+    <MESSAGE value="完成90%照片墙功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成90%照片墙功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -745,8 +748,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/showWork.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="595">
+          <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="46" selection-end-column="63" />
           <folding>
             <element signature="e#1646#1723#0" expanded="false" />
             <element signature="e#1996#2466#0" expanded="false" />
