@@ -3,8 +3,7 @@
  */
 requirejs.config({
     path:{
-            jquery:'jquery.min',
-            carousel:'carousel'
+            jquery:'jquery.min'
         }
 });
 //没有采用模板字符串，有时间再做QAQ，尽量做成单独的组件
@@ -37,11 +36,22 @@ define(["jquery"],function($){
             $('.filtering').append("<span>" + this.defaultSettings.selection[index] + "</span>");
 
         }
+        //切换分类时，隐藏其他分类的div
         $('.filtering').children('span').on('click',function () {
-           // if($('.filtering').children('span'))
-           //  console.log($('.filtering').children('span'));
-            $('.filtering').children('span').filter(function (index) {
-                // console.log(index)
+            var name = this.innerText;
+            $('.itemImg').filter(function (index) {
+
+                if(this.className.match(name)){
+
+                    $(this).css('display','block');
+
+                }else if(name == 'All'){
+                    $(this).children('img').css('display','block');
+
+                }else{
+
+                    $(this).css('display','none');
+                }
             })
         });
         $(this.defaultSettings.selector).append(this.$gallery);

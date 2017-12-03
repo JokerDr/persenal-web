@@ -467,6 +467,7 @@
     height:380px;
     width:380px;
     overflow: hidden;
+    transition: all 1s;
 }
 #portfolio .itemImg img{
     height:100%;
@@ -628,7 +629,7 @@
 #contact .con-item input{
     width:462px;
     height:30px;
-    padding:7px 0;
+    padding-top: 10px;
     -webkit-user-select: text;
     -moz-user-select: text;
     -ms-user-select: text;
@@ -671,6 +672,7 @@
     background: #03a9f4;
     color: #fff;
 }
+
 /*contact结束*/
 /*footer开始*/
 #page-footer{
