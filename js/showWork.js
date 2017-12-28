@@ -13,7 +13,7 @@ define(["jquery"],function($){
         this.$gallery = $('<div class="gallery"></div>');
         this.$img = $('<img alt="image">');
         this.$h4 = $('<h4></h4>');
-        this.$a =$('<a><i></i></a>')
+        this.$a =$('<a><i></i></a>');
         this.defaultSettings = {
             selector : "",
             selection :[],
@@ -25,7 +25,7 @@ define(["jquery"],function($){
             speed : 1000,
             selectCount:4,
             itemCount:6
-        }
+        };
         $.extend(this.defaultSettings,settings);
     }
     ShowWork.prototype.init=function(){
@@ -40,16 +40,11 @@ define(["jquery"],function($){
         $('.filtering').children('span').on('click',function () {
             var name = this.innerText;
             $('.itemImg').filter(function (index) {
-
                 if(this.className.match(name)){
-
                     $(this).css('display','block');
-
                 }else if(name == 'All'){
-                    $(this).children('img').css('display','block');
-
+                    $(this).css('display','block');
                 }else{
-
                     $(this).css('display','none');
                 }
             })
@@ -72,14 +67,15 @@ define(["jquery"],function($){
         }
         //封装一个addclass函数
         function addClass(obj, cls){
-            var obj_class = obj.className;  //获取 class 内容.
+            var obj_class = obj.className;
             var blank = (obj_class != '') ? ' ' : '';//判断获取到的 class 是否为空, 如果不为空在前面加个'空格'.
             var added = obj_class + blank + cls;//组合原来的 class 和需要添加的 class.
-            obj.className = added;//替换原来的 class.
+            obj.className = added;
         }
         function add (index) {
             if(window.addEventListener){
-                $('.itemImg')[index].addEventListener('mouseover',function(){
+                $('.itemImg')[index].addEventListener('mouseover',
+                    function(){
                     $(this).addClass('imgmask');
                     gotVal('scale(1.4)','0','rotateX(0deg)','3','50%',index);
                 });
@@ -105,6 +101,6 @@ define(["jquery"],function($){
              $('.itemImg').find('a')[index].style.zIndex = d;
              $('.itemImg').find('a')[index].style.bottom = e;
          }
-    }
+    };
     return ShowWork;
 });

@@ -3,41 +3,45 @@
 #nav{
     position: fixed;
     width: 100%;
-    height: 65px;
+    height: 5.416rem;
     top: 0;
     background: #101618;
-    opacity: 0.8;
+    opacity: 0.80;
     filter:alpha(opacity=80);
     color: #fff;
     z-index: 101;
 }
 #nav .content{
-    height: 41px;
-    padding: 12px 13px;
+    height: 3.41rem;
+    padding: 1rem 1.08rem;
 }
-#nav a{
+#nav .content div a{
     text-align: center;
-    height: 26px;
-    width: 58px;
-    padding: 5px 0;
-    margin: 0 43px;
+    height: 2.16rem;
+    width: 4.83rem;
+    padding: 0.416rem 0;
+    margin: 0 3.58rem;
     float: left;
     color: #fff;
-    line-height: 26px;
+    line-height: 2.16rem;
 }
 #nav .nav-menu{
     float: right;
 }
 #nav ul{
-    height: 41px;
+    height: 3.41rem;
 }
-#nav .nav-menu li{
-    height: 26px;
+#nav .nav-menu a{
+    height: 2.16rem;
     float: left;
-    padding: 7px;
-    line-height: 26px;
+    padding: .58rem;
+    line-height:2.16rem;
 }
-#nav ul li:hover{
+#nav ul a:hover{
+    color: #ccc;
+}
+#nav ul a{
+
     color: #ccc;
 }
 #nav ul .selected{
@@ -48,24 +52,24 @@
     background: url('../img/main-bg2.jpg') no-repeat center;
     background-size: cover;
     position: fixed;
-    height: 990px;
+    height: 82.5rem;
     width: 100%;
     z-index: -2;
     float: left;
 }
 /*head开始*/
 #head{
-    height: 990px;
+    height: 82.5rem;
     width: 100%;
     float: left;
     text-align: center;
     position: relative;
     margin-top: 0;
-    background: url('../img/main-bg.png') no-repeat center;
+    background: url('../img/main-bg.png') no-repeat center fixed;
     background-size: cover;
 }
 #head .bg-mask{
-    height: 990px;
+    height: 82.5rem;
     width: 100%;
     float: left;
     /* RGBa with 0.6 opacity */
@@ -98,6 +102,7 @@
     height: 36px;
     width: 1894px;
 }
+
 #head .button-scroll{
     position: absolute;
     left:50%;
@@ -123,7 +128,7 @@
     animation: 1.6s upDown infinite steps(2000);
 }
 #particles-js{
-    height: 990px;
+    height: 82.5rem;
     width: 100%;
     position: absolute;
     top: 0;

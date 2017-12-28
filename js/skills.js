@@ -15,8 +15,6 @@ define(["jquery"],function($){
                 skillName:[],
                 left:1100,
                 color:"#03a9f4"
-                // transitionDuring:1000,
-                // content:""
             };
             $.extend(this.defaultSettings,settings);//合并参数
           }

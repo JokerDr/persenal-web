@@ -1,19 +1,19 @@
-@media (max-width: 1200px) {
-    #about{
-        height:414px;
-    }
-    #about .between{
-        width:960px;
-        height: 414px;
-    }
-    #about .between .my-photo{
-        height:414px;
-        width:290px;
-    }
-    #about .between .my-intro{
-        width:530px;
-    }
-    #about .between .my-intro .content div{
-        width:232px;
-    }
-}
+/*@media (max-width: 1200px) {*/
+    /*#about{*/
+        /*height:414px;*/
+    /*}*/
+    /*#about .between{*/
+        /*width:960px;*/
+        /*height: 414px;*/
+    /*}*/
+    /*#about .between .my-photo{*/
+        /*height:414px;*/
+        /*width:290px;*/
+    /*}*/
+    /*#about .between .my-intro{*/
+        /*width:530px;*/
+    /*}*/
+    /*#about .between .my-intro .content div{*/
+        /*width:232px;*/
+    /*}*/
+/*}*/
